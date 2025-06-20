@@ -14,6 +14,8 @@ jobs:
           run: npm ci
         - name: NPM test
           run: npm test
-    Deploy:
-      - name: Deploy
-        run: echo "Deploying"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Deploying
+          run: echo "Deployment in progress"
